@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flash Math</title>
+	<style>
+		* {
+			font-family: sans-serif;
+		}
+		body {
+			background-color: #55acee;
+		}
+		h1 {
+			text-align: center;
+			color:blue;
+		}
+		#question {
+			text-align: center;
+			font-size: 3em;
+			border: 3px dotted green;
+		}
+		p {
+			text-align: center;
+		}
+		input[type="text"] {
+			text-align: center;
+			font-size: 1.5em;
+		}
+		#error {
+			background-color: red;
+			color: white;
+		}
+		.content2 {
+			background-color: green;
+			padding: 10px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+		
+	</style>
+</head>
+<body onload="doMath()">
+	<h1>Flash Math</h1>
+	<div id="question"></div>
+	<p><input type="text" name="answer" id="answer" placeholder="Your Answer"></p>
+	<div class="content">
+		<p id="error"></p>
+		<p id="yes"></p>
+	</div>
+	<div class="content2">
+		<span>Score</span>
+		<p id="grade"></p>
+		<p id="correct"></p>
+		<button id="reset">Reset</button>
+	</div>
+	<div style="clear:both;"></div>
+	<form name="check" id="check" action="" method="get">
+		<p><input id="bttn" type="submit" value="Check Answer"></p>
+		<p></p>
+	</form>
+	<script src="math.js"></script>
+</body>
+</html>
